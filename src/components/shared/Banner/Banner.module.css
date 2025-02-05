@@ -3,6 +3,12 @@
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover; /* Adjusted for full coverage */
   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .banner_container {
+    background-size: contain; /* Change to fit smaller screens */
+  }
 }
