@@ -16,8 +16,7 @@ const BlogDetailsPage = async ({
   params: Promise<{ blogId: string }>;
 }) => {
   const { blogId } = await params;
-  const res = await fetch(`
-    /${blogId}`);
+  const res = await fetch(`http://localhost:5000/blogs/${blogId}`);
 
   const blog = await res.json();
 
