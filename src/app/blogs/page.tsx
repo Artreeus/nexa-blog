@@ -1,19 +1,23 @@
+'use client'
+
 import BlogCard from "@/components/ui/BlogCard";
 import { Blog } from "@/types";
-import { Metadata } from 'next';
+// import { Metadata } from 'next';
 
 
-export const metadata : Metadata = {
-  title: "NexaBlog |  Blogs",
-}
+// export const metadata : Metadata = {
+//   title: "NexaBlog |  Blogs",
+// }
 
-const Blogspage = async() => {
+const Blogspage = () => {
 
-    const res = await fetch("http://localhost:5000/blogs",{
-      cache: "no-store",
-    });
-    const blogs = await res.json();
-    console.log(blogs)
+    // const res = await fetch("http://localhost:5000/blogs",{
+    //   cache: "no-store",
+    // });
+    // const blogs = await res.json();
+    // console.log(blogs)
+
+
     return (
         <div className="w-[90%] mx-auto">
             <h1 className="text-3xl text-center my-5 font-bold">
