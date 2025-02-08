@@ -1,8 +1,11 @@
+import Form from 'next/form'
+
+
 const BlogForm = () => {
   return (
     <div className="flex items-center justify-center min-h-screen my-10">
       <div className="w-full max-w-4xl bg-white shadow-lg rounded-lg p-6">
-        <form>
+        <Form action="/blogs" >
           <h2 className="text-2xl font-semibold mb-6 text-teal-600 text-center">
             Create Blog
           </h2>
@@ -82,7 +85,7 @@ const BlogForm = () => {
             <input
               type="url"
               id="blog_image"
-              name="blog_image"
+              name="blog_image" 
               className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500"
               placeholder="Paste image URL here"
             />
@@ -109,7 +112,7 @@ const BlogForm = () => {
           >
             Create
           </button>
-        </form>
+        </Form>
       </div>
     </div>
   );
